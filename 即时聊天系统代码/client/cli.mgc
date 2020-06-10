@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="socket.ClientThread" x="1047" y="53">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="socket.Client"
+            endpointName="c" kind="Simple"/>
+        <Association destinationClassName="user.User"
+            endpointName="user" kind="Simple"/>
+        <Communication destinationClassName="socket.Client"/>
+        <Communication destinationClassName="user.User"/>
+        <Communication destinationClassName="tool.InformationTransport"/>
+    </Class>
+    <Class name="gui.Friends" x="924" y="509">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="socket.Client"
+            endpointName="c" kind="Simple"/>
+        <Association destinationClassName="user.User"
+            endpointName="user" kind="Simple"/>
+        <Communication destinationClassName="user.User"/>
+    </Class>
+    <Class name="socket.Client" x="439" y="348">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="user.User" x="458" y="35">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="gui.Delete_Friend" x="-56" y="389">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="socket.Client"
+            endpointName="client" kind="Simple"/>
+        <Association destinationClassName="user.User"
+            endpointName="user" kind="Composition"/>
+        <Communication destinationClassName="socket.Client"/>
+        <Communication destinationClassName="user.User"/>
+        <Communication destinationClassName="tool.InformationTransport"/>
+    </Class>
+    <Class name="gui.Register" x="1329" y="318">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="socket.Client"/>
+        <Communication destinationClassName="tool.InformationTransport"/>
+    </Class>
+    <Class name="gui.Start_Login" x="522" y="664">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Communication destinationClassName="socket.Client"/>
+        <Communication destinationClassName="tool.InformationTransport"/>
+    </Class>
+    <Class name="gui.Add_Friend" x="28" y="19">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="socket.Client"
+            endpointName="client" kind="Simple"/>
+        <Association destinationClassName="user.User"
+            endpointName="user" kind="Simple"/>
+        <Communication destinationClassName="socket.Client"/>
+        <Communication destinationClassName="user.User"/>
+        <Communication destinationClassName="tool.InformationTransport"/>
+    </Class>
+    <Class name="gui.Chat" x="903" y="243">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="user.User"
+            endpointName="owner" kind="Simple"/>
+        <Association destinationClassName="socket.Client"
+            endpointName="client" kind="Simple"/>
+        <Association destinationClassName="socket.ClientThread"
+            endpointName="thread" kind="Simple"/>
+        <Communication destinationClassName="socket.Client"/>
+        <Communication destinationClassName="user.User"/>
+        <Communication destinationClassName="tool.InformationTransport"/>
+    </Class>
+    <Class name="tool.InformationTransport" x="89" y="583">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="gui.Friends.MyMouseListener" x="1267" y="68">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>

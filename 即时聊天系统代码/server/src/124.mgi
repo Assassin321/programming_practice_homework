@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass name="tool.Slist" x="279" y="498"/>
+    <CommunicationClass name="user.User" x="783" y="368"/>
+    <CommunicationClass name="socket.Sockets" x="1017" y="502"/>
+    <CommunicationClass name="socket.startServerThread" x="60" y="378">
+        <Communication destinationClassName="socket.Server"/>
+    </CommunicationClass>
+    <CommunicationClass name="tool.Mysql" x="194" y="240"/>
+    <CommunicationClass name="tool.InformationTransport" x="371" y="299"/>
+    <CommunicationClass name="socket.ServerThread" x="691" y="515">
+        <Communication destinationClassName="tool.Slist"/>
+        <Communication destinationClassName="user.User"/>
+        <Communication destinationClassName="socket.Sockets"/>
+        <Communication destinationClassName="tool.InformationTransport"/>
+        <Communication destinationClassName="service.Userdata"/>
+    </CommunicationClass>
+    <CommunicationClass name="service.Userdata" x="727" y="103">
+        <Communication destinationClassName="user.User"/>
+        <Communication destinationClassName="tool.Mysql"/>
+    </CommunicationClass>
+    <CommunicationClass name="socket.Server" x="106" y="124"/>
+    <CommunicationClass name="socket.Start" x="97" y="473"/>
+</ClassDiagram>

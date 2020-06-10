@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PackageAnalysis>
+    <Package name="gui" x="93" y="182">
+        <DependencyLink destination="socket"/>
+        <DependencyLink destination="user"/>
+        <DependencyLink destination="tool"/>
+    </Package>
+    <Package name="socket" x="513" y="181">
+        <DependencyLink destination="user"/>
+        <DependencyLink destination="tool"/>
+    </Package>
+    <Package name="tool" x="299" y="333"/>
+    <Package name="user" x="299" y="27"/>
+</PackageAnalysis>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PackageAnalysis>
+    <Package name="service" x="368" y="64">
+        <DependencyLink destination="user"/>
+        <DependencyLink destination="tool"/>
+    </Package>
+    <Package name="socket" x="33" y="330">
+        <DependencyLink destination="service"/>
+        <DependencyLink destination="user"/>
+        <DependencyLink destination="tool"/>
+    </Package>
+    <Package name="tool" x="374" y="322">
+        <DependencyLink destination="socket"/>
+    </Package>
+    <Package name="user" x="41" y="59"/>
+</PackageAnalysis>

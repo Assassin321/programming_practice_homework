@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass name="socket.ClientThread" x="950" y="-47">
+        <Association destinationClassName="socket.Client"
+            endpointName="c" kind="Simple"/>
+        <Communication destinationClassName="socket.Client"/>
+        <Communication destinationClassName="tool.InformationTransport"/>
+    </CommunicationClass>
+    <CommunicationClass name="gui.Friends" x="258" y="267">
+        <Association destinationClassName="socket.Client"
+            endpointName="c" kind="Simple"/>
+    </CommunicationClass>
+    <CommunicationClass name="socket.Client" x="1033" y="159"/>
+    <CommunicationClass name="gui.Delete_Friend" x="-58" y="336">
+        <Association destinationClassName="socket.Client"
+            endpointName="client" kind="Simple"/>
+        <Communication destinationClassName="socket.Client"/>
+        <Communication destinationClassName="tool.InformationTransport"/>
+    </CommunicationClass>
+    <CommunicationClass name="gui.Register" x="797" y="142">
+        <Communication destinationClassName="socket.Client"/>
+        <Communication destinationClassName="tool.InformationTransport"/>
+    </CommunicationClass>
+    <CommunicationClass name="gui.Start_Login" x="762" y="551">
+        <Communication destinationClassName="socket.Client"/>
+        <Communication destinationClassName="tool.InformationTransport"/>
+    </CommunicationClass>
+    <CommunicationClass name="gui.Add_Friend" x="69" y="-13">
+        <Association destinationClassName="socket.Client"
+            endpointName="client" kind="Simple"/>
+        <Communication destinationClassName="socket.Client"/>
+        <Communication destinationClassName="tool.InformationTransport"/>
+    </CommunicationClass>
+    <CommunicationClass name="gui.Chat" x="481" y="-173">
+        <Association destinationClassName="socket.Client"
+            endpointName="client" kind="Simple"/>
+        <Association destinationClassName="socket.ClientThread"
+            endpointName="thread" kind="Simple"/>
+        <Communication destinationClassName="socket.Client"/>
+        <Communication destinationClassName="tool.InformationTransport"/>
+    </CommunicationClass>
+    <CommunicationClass name="tool.InformationTransport" x="349" y="138"/>
+    <CommunicationClass name="gui.Friends.MyMouseListener" x="86" y="237"/>
+</ClassDiagram>
